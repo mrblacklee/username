@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<classPathEntry location="E:/maven/repo/mysql/mysql-connector-java/5.1.40/mysql-connector-java-5.1.40.jar"/>
+	<context id="my" targetRuntime="MyBatis3">
+		<commentGenerator>
+			<property name="suppressDate" value="true"/>
+			<property name="suppressAllComments" value="false"/>
+		</commentGenerator>
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/tedu_store?useUnicode=true&amp;characterEncoding=utf8" userId="root" password="123456"/>
+		<javaModelGenerator targetPackage="cn.com.example.test.domain" targetProject="E:/common/test/src/main/java">
+			<property name="enableSubPackages" value="true"/>
+			<property name="trimStrings" value="true"/>
+		</javaModelGenerator>
+		<sqlMapGenerator targetPackage="mapper" targetProject="E:/common/test/src/main/resources">
+			<property name="enableSubPackages" value="true"/>
+		</sqlMapGenerator>
+		<javaClientGenerator targetPackage="cn.com.example.test.dao" targetProject="E:/common/test/src/main/java" type="XMLMAPPER">
+			<property name="enableSubPackages" value="true"/>
+		</javaClientGenerator>
+
+		<!--<table tableName="t_car" domainObjectName="TCar"
+			   mapperName="TCarDao" enableCountByExample="false"
+			   enableUpdateByExample="false" enableDeleteByExample="false"
+			   enableSelectByExample="false" selectByExampleQueryId="false">
+			<generatedKey column="id" sqlStatement="MySql" identity="true" />
+		</table>-->
+		<!--<table tableName="t_address" domainObjectName="TAddress"
+		mapperName="TAddressDao" enableCountByExample="false"
+		enableUpdateByExample="false" enableDeleteByExample="false"
+		enableSelectByExample="false" selectByExampleQueryId="false">
+		<generatedKey column="id" sqlStatement="MySql" identity="true" />
+		</table>-->
+		<!--<table tableName="t_dict_areas" domainObjectName="TDictAreas"
+			   mapperName="TDictAreasDao" enableCountByExample="false"
+			   enableUpdateByExample="false" enableDeleteByExample="false"
+			   enableSelectByExample="false" selectByExampleQueryId="false">
+			<generatedKey column="id" sqlStatement="MySql" identity="true" />
+		</table>
+		<table tableName="t_dict_cities" domainObjectName="TDictCities"
+			   mapperName="TDictCitiesDao" enableCountByExample="false"
+			   enableUpdateByExample="false" enableDeleteByExample="false"
+			   enableSelectByExample="false" selectByExampleQueryId="false">
+			<generatedKey column="id" sqlStatement="MySql" identity="true" />
+		</table>
+		<table tableName="t_dict_provinces" domainObjectName="TDictProvinces"
+			   mapperName="TDictProvincesDao" enableCountByExample="false"
+			   enableUpdateByExample="false" enableDeleteByExample="false"
+			   enableSelectByExample="false" selectByExampleQueryId="false">
+			<generatedKey column="id" sqlStatement="MySql" identity="true" />
+		</table>
+		<table tableName="t_goods" domainObjectName="TGoods"
+			   mapperName="TGoodsDao" enableCountByExample="false"
+			   enableUpdateByExample="false" enableDeleteByExample="false"
+			   enableSelectByExample="false" selectByExampleQueryId="false">
+			<generatedKey column="id" sqlStatement="MySql" identity="true" />
+		</table>
+		<table tableName="t_user" domainObjectName="TUser"
+			   mapperName="TUserDao" enableCountByExample="false"
+			   enableUpdateByExample="false" enableDeleteByExample="false"
+			   enableSelectByExample="false" selectByExampleQueryId="false">
+			<generatedKey column="id" sqlStatement="MySql" identity="true" />
+		</table>-->
+	</context>
+</generatorConfiguration>
